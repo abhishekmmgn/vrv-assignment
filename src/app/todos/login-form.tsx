@@ -55,7 +55,7 @@ export default function LoginForm({ className }: React.ComponentProps<"form">) {
         localStorage.setItem("email", email);
         localStorage.setItem("permissions", permissions);
         setSubmitting(false);
-        refresh();
+        window.location.reload();
       } else {
         console.log("No such document!");
         form.setError("root", {

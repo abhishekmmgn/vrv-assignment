@@ -19,6 +19,7 @@ export default function Header() {
     localStorage.removeItem("email");
     localStorage.removeItem("permissions");
     refresh();
+    window.location.reload();
   }
 
   useEffect(() => {
